@@ -61,7 +61,9 @@ stroke-width:5;opacity:0.5"/>
 	c67.3-1.9,158.3-43.3,264-214" />
 </svg>
 ```
+
 > 折线：7.svg
+
 ```svg
 <!-- 折线，当然也可以画直线 -->
 <polyline points="100,100 200,100 200,200 300,200" style="fill:white;stroke:red;stroke-width:2"/>
@@ -106,7 +108,19 @@ stroke-width:5;opacity:0.5"/>
 - fePointLight       
 - feSpotLight       
 
-
+```svg
+<!-- 1.<filter> 标签的 id 属性可为滤镜定义一个唯一的名称（同一滤镜可被文档中的多个元素使用）
+2.filter:url 属性用来把元素链接到滤镜。当链接滤镜 id 时，必须使用 # 字符
+3.滤镜效果是通过 <feGaussianBlur> 标签进行定义的。fe 后缀可用于所有的滤镜
+4.<feGaussianBlur> 标签的 stdDeviation 属性可定义模糊的程度
+5.in="SourceGraphic" 这个部分定义了由整个图像创建效果 -->
+<defs>
+	<filter id="Gaussian_Blur">
+	<feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+	</filter>
+</defs>
+<ellipse cx="200" cy="150" rx="70" ry="40" style="fill:#9acd32;stroke:#ccc;stroke-width:2;filter:url(#Gaussian_Blur)"/>
+```
 
 
 
