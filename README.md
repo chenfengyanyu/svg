@@ -123,12 +123,38 @@ stroke-width:5;opacity:0.5"/>
 4.<feGaussianBlur> 标签的 stdDeviation 属性可定义模糊的程度       
 5.in="SourceGraphic" 这个部分定义了由整个图像创建效果    
 
+> 线性渐变，放射性渐变：10.svg
 
+- 当 y1 和 y2 相等，而 x1 和 x2 不同时，可创建水平渐变
+- 当 x1 和 x2 相等，而 y1 和 y2 不同时，可创建垂直渐变
+- 当 x1 和 x2 不同，且 y1 和 y2 不同时，可创建角形渐变
 
+```svg
+<!-- 线性渐变 -->
+<defs>
+	<linearGradient id="orange_red" x1="0%" y1="0%" x2="0%" y2="100%">
+		<stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1"/>
+		<stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:0.5"/>
+	</linearGradient>
+</defs>
+<ellipse cx="200" cy="190" rx="85" ry="55" style="fill:url(#orange_red)"/>
+```
 
+- <linearGradient> 标签的 id 属性可为渐变定义一个唯一的名称
+- fill:url(#orange_red) 属性把 ellipse 元素链接到此渐变
+- <linearGradient> 标签的 x1、x2、y1、y2 属性可定义渐变的开始和结束位置
+- 渐变的颜色范围可由两种或多种颜色组成。每种颜色通过一个 <stop> 标签来规定。offset 属性用来定义渐变的开始和结束位置。
 
-
-
+```svg
+<!-- cx,cy确定迳向的水平和垂直位置 -->
+<defs>
+	<radialGradient id="grey_blue" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+		<stop offset="0%" style="stop-color:rgb(200,200,200);stop-opacity:0"/>
+		<stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:0.8"/>
+	</radialGradient>
+</defs>
+<ellipse cx="500" cy="200" rx="110" ry="100" style="fill:url(#grey_blue)"/>
+```
 
 
 
