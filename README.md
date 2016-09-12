@@ -38,7 +38,7 @@ stroke-width:5;opacity:0.5"/>
 ```
 
 - svg编辑器创建：6.svg
-- 通过AI钢笔工具绘制，导出svg格式
+> 通过AI钢笔工具绘制，导出svg格式
 ```svg
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -61,40 +61,40 @@ stroke-width:5;opacity:0.5"/>
 ```
 
 - path应用：8.svg
-- M = moveto
-- L = lineto
-- H = horizontal lineto
-- V = vertical lineto
-- C = curveto
-- S = smooth curveto
-- Q = quadratic Belzier curve
-- T = smooth quadratic Belzier curveto
-- A = elliptical Arc
-- Z = closepath
+> M = moveto
+> L = lineto
+> H = horizontal lineto
+> V = vertical lineto
+> C = curveto
+> S = smooth curveto
+> Q = quadratic Belzier curve
+> T = smooth quadratic Belzier curveto
+> A = elliptical Arc
+> Z = closepath
 ```svg
 <path d="M100 100 L200 100 L200 200 L300 200" style="fill:white;stroke:green;stroke-width:2"/>
 ```
 
 - 滤镜使用：9.svg
-- feBlend
-- feColorMatrix
-- feComponentTransfer
-- feComposite
-- feConvolveMatrix
-- feDiffuseLighting
-- feDisplacementMap
-- feFlood
-- feGaussianBlur
-- feImage
-- feMerge
-- feMorphology
-- feOffset
-- feSpecularLighting
-- feTile
-- feTurbulence
-- feDistantLight
-- fePointLight
-- feSpotLight
+> feBlend
+> feColorMatrix
+> feComponentTransfer
+> feComposite
+> feConvolveMatrix
+> feDiffuseLighting
+> feDisplacementMap
+> feFlood
+> feGaussianBlur
+> feImage
+> feMerge
+> feMorphology
+> feOffset
+> feSpecularLighting
+> feTile
+> feTurbulence
+> feDistantLight
+> fePointLight
+> feSpotLight
 
 
 
