@@ -1,13 +1,12 @@
 # svg
 
-## demo
-> 绘制一个圆：1.svg
+## 绘制一个圆：1.svg
 
 ```svg
 <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red"/>
 ```
 
-> 矩形，透明度，圆角：2.svg
+## 矩形，透明度，圆角：2.svg
 
 ```svg
 <rect x="300" y="100" width="250" height="250" style="fill:blue;stroke:pink;stroke-width:5;
@@ -17,21 +16,21 @@ fill-opacity:0.1;stroke-opacity:0.9"/>
 stroke-width:5;opacity:0.5"/>
 ```
 
-> 椭圆：3.svg
+## 椭圆：3.svg
 
 ```svg
 <!-- 椭圆有不同的 x 和 y 半径，而圆的 x 和 y 半径是相同的 -->
 <ellipse cx="300" cy="150" rx="150" ry="80" style="fill:rgb(200,100,50);stroke:rgb(0,0,100);stroke-width:2"/>
 ```
 
-> 线条：4.svg
+## 线条：4.svg
 
 ```svg
 <!-- 起点x1y1，终点x2y2 -->
 <line x1="0" y1="0" x2="300" y2="300" style="stroke:rgb(99,99,99);stroke-width:2"/>
 ```
 
-> 三角形，多边形：5.svg
+## 三角形，多边形：5.svg
 
 ```svg
 <!-- 三角形 -->
@@ -42,9 +41,9 @@ stroke-width:5;opacity:0.5"/>
 <polygon points="100,10 40,180 190,60 10,60 160,180" style="fill:#F44336;stroke:#F44336;fill-rule:nonzero;" />
 ```
 
-> svg编辑器创建：6.svg
+## svg编辑器创建：6.svg
 
-- 通过AI钢笔工具绘制，导出svg格式
+> 通过AI钢笔工具绘制，导出svg格式
 
 ```svg
 <?xml version="1.0" encoding="utf-8"?>
@@ -62,14 +61,14 @@ stroke-width:5;opacity:0.5"/>
 </svg>
 ```
 
-> 折线：7.svg
+## 折线：7.svg
 
 ```svg
 <!-- 折线，当然也可以画直线 -->
 <polyline points="100,100 200,100 200,200 300,200" style="fill:white;stroke:red;stroke-width:2"/>
 ```
 
-> path应用：8.svg
+## path应用：8.svg
 
 - M = moveto      
 - L = lineto      
@@ -86,7 +85,7 @@ stroke-width:5;opacity:0.5"/>
 <path d="M100 100 L200 100 L200 200 L300 200" style="fill:white;stroke:green;stroke-width:2"/>
 ```
 
-> 滤镜使用：9.svg
+## 滤镜使用：9.svg
 
 - feBlend      
 - feColorMatrix      
@@ -117,13 +116,13 @@ stroke-width:5;opacity:0.5"/>
 <ellipse cx="200" cy="150" rx="70" ry="40" style="fill:#9acd32;stroke:#ccc;stroke-width:2;filter:url(#Gaussian_Blur)"/>
 ```
 
-1.<filter> 标签的 id 属性可为滤镜定义一个唯一的名称（同一滤镜可被文档中的多个元素使用）     
-2.filter:url 属性用来把元素链接到滤镜。当链接滤镜 id 时，必须使用 # 字符     
-3.滤镜效果是通过 <feGaussianBlur> 标签进行定义的。fe 后缀可用于所有的滤镜     
-4.<feGaussianBlur> 标签的 stdDeviation 属性可定义模糊的程度       
-5.in="SourceGraphic" 这个部分定义了由整个图像创建效果    
+ 1.<filter> 标签的 id 属性可为滤镜定义一个唯一的名称（同一滤镜可被文档中的多个元素使用）     
+ 2.filter:url 属性用来把元素链接到滤镜。当链接滤镜 id 时，必须使用 # 字符     
+ 3.滤镜效果是通过 <feGaussianBlur> 标签进行定义的。fe 后缀可用于所有的滤镜     
+ 4.<feGaussianBlur> 标签的 stdDeviation 属性可定义模糊的程度       
+ 5.in="SourceGraphic" 这个部分定义了由整个图像创建效果    
 
-> 线性渐变，放射性渐变：10.svg
+## 线性渐变，放射性渐变：10.svg
 
 - 当 y1 和 y2 相等，而 x1 和 x2 不同时，可创建水平渐变
 - 当 x1 和 x2 相等，而 y1 和 y2 不同时，可创建垂直渐变
