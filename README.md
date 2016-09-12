@@ -37,10 +37,46 @@ stroke-width:5;opacity:0.5"/>
 <polygon points="100,10 40,180 190,60 10,60 160,180" style="fill:#F44336;stroke:#F44336;fill-rule:nonzero;" />
 ```
 
-- 线条：6.svg
+- svg编辑器创建：6.svg
+通过AI钢笔工具绘制，导出svg格式
 ```svg
-
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 960 560" style="enable-background:new 0 0 960 560;" xml:space="preserve">
+    <style type="text/css">
+    .st0 {
+        fill: #FFFFFF;
+        stroke: #000000;
+        stroke-miterlimit: 10;
+    }
+    </style>
+    <path id="XMLID_1_" class="st0" d="M77,82c76.3,259.8,128.7,318.6,164,316c54.2-3.9,54.3-150.9,149-183c88.7-30.1,153.1,77.2,266,74
+	c67.3-1.9,158.3-43.3,264-214" />
+</svg>
 ```
+- 折线：7.svg
+```svg
+<!-- 折线，当然也可以画直线 -->
+<polyline points="100,100 200,100 200,200 300,200"
+style="fill:white;stroke:red;stroke-width:2"/>
+```
+
+- path应用：8.svg
+M = moveto
+L = lineto
+H = horizontal lineto
+V = vertical lineto
+C = curveto
+S = smooth curveto
+Q = quadratic Belzier curve
+T = smooth quadratic Belzier curveto
+A = elliptical Arc
+Z = closepath
+```svg
+<path d="M100 100 L200 100 L200 200 L300 200" style="fill:white;stroke:green;stroke-width:2"/>
+```
+
+
 
 
 
